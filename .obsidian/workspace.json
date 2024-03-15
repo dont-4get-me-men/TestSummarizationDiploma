@@ -22,19 +22,36 @@
             }
           },
           {
-            "id": "5d71e87b19023491",
+            "id": "c78f3af10f41963e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "План.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "eb05277a14cb53d3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "79291257d76dd772",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "План.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,6 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "План.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,6 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "План.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "План.md"
               }
             }
           }
@@ -159,19 +178,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "948d86ef933fac24",
+  "active": "79291257d76dd772",
   "lastOpenFiles": [
-    "README.md",
-    "Untitled.md",
-    "Untitled",
-    "Datasets",
-    "Scripts",
     "Essay.md",
-    "Templates/Zotero Template.md",
+    "Sources/nazariSurveyAutomaticText2019.md",
+    "Sources/brinAnatomyofLargescalehypertextualWebSearchengine.md",
     "Sources/mihalceaTextRankBringingOrder2004.md",
+    "Sources/Images/nazariSurveyAutomaticText2019/image-11-x54-y137.png",
+    "Sources/Images/nazariSurveyAutomaticText2019",
+    "План.md",
+    "README.md",
     "Sources/Images/mihalceaTextRankBringingOrder2004/image-2-x304-y405.png",
     "Sources/Images/mihalceaTextRankBringingOrder2004",
     "Sources/Images",
+    "Untitled",
+    "Datasets",
+    "Scripts",
+    "Templates/Zotero Template.md",
     "Templates",
     "Welcome.md",
     "Sources"

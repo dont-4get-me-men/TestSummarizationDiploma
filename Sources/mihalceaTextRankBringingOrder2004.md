@@ -23,12 +23,12 @@ Zotero Link: [Full Text PDF](zotero://select/library/items/SU38TTDT)
 > 
 
 
-> afrequenc ycriterion to select the “important” keywords in adocument.
+> a frequency criterion to select the “important” keywords in a document.
 > 
 > 
 
 
-> The state-ofthe-art in this area iscurrently represented by supervised learning methods, where asystem istrained to recognize keywords in atext, based on lexical and syntactic features
+> The state-ofthe-art in this area is currently represented by supervised learning methods, where a system is trained to recognize keywords in a text, based on lexical and syntactic features
 > 
 > 
 
@@ -38,7 +38,7 @@ Zotero Link: [Full Text PDF](zotero://select/library/items/SU38TTDT)
 > 
 
 
-> the text is tokenized, and annotated with part of speech tags –apreprocessing step required to enable the application of syntactic filters. Toavoid excessivegro wth of the graph size by adding all possible combinations of sequences consisting of more than one lexical unit (ngrams), we consider only single words as candidates for addition to the graph, with multi-word keywords being eventually reconstructed in the post-processing phase. Next, all lexical units that pass the syntactic filter are added tothe graph, and an edge isadded between those lexical units that co-occur within awindo w of words. After the graph isconstructed (undirected unweighted graph), the score associated with each vertexisset to an initial value of 1, and the ranking algorithm described in section 2isrun on the graph for several iterations until itcon verges –usually for 20-30 iterations, atathreshold of 0.0001. Once afinal score isobtained for each vertexinthe graph, vertices are sorted in reversed order of their score, and the top vertices in the ranking are retained for post-processing. While may be set to anyfix ed value, usually ranging from 5to 20 keywords (e.g. (Turney,1999) limits the number of keywords extracted with his GenEx system to five), we are using amore flexible approach, which decide
+> the text is tokenized, and annotated with part of speech tags – a preprocessing step required to enable the application of syntactic filters. To avoid excessive growth of the graph size by adding all possible combinations of sequences consisting of more than one lexical unit (ngrams), we consider only single words as candidates for addition to the graph, with multi-word keywords being eventually reconstructed in the post-processing phase. Next, all lexical units that pass the syntactic filter are added to the graph, and an edge is added between those lexical units that co-occur within a window of words. After the graph is constructed (undirected unweighted graph), the score associated with each vertex is set to an initial value of 1, and the ranking algorithm described in section 2 is run on the graph for several iterations until it converges –usually for 20-30 iterations, at a threshold of 0.0001. Once a final score is obtained for each vertex in the graph, vertices are sorted in reversed order of their score, and the top vertices in the ranking are retained for post-processing. While may be set to any fixed value, usually ranging from 5to 20 keywords (e.g. (Turney,1999) limits the number of keywords extracted with his GenEx system to five), we are using amore flexible approach, which decide
 > 
 > 
 > text Rank algo keyword

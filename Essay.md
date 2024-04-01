@@ -19,7 +19,23 @@
 	Результати такого алгоритму показали, що найкраще показують себе Cue-Title-Location алгоритми (Див. Додаток Малюнок 1)
 
 
+#### Методи машинного навчання
+Ідея цих методів полягає в тому, щоб використовувати задача класифікації для прогнозування "важливого" речення. 
 
+##### Наївний баєсів класифікатор
+Як уже було сказано раніше цей метод будується на задачі класифікації, де в нас є датасет для тренування, що складається з підходящих та не підходящих для реферування речень. З тексту також витягуються основні ознаки: частоти слів, кількість слів з великої букви, довжина рядка, позиція в параграфі, тощо [6]. 
+Далі використовуючи формулу баєса ми для кожного речення визначаємо чи ймовірність потрапити в реферування використовуючи формулу нижче. 
+
+$P(s \in S|F_1,F_2,...,F_k) = \frac{P(s \in S) \times \prod_{j=1}^{k} P(F_j| s \in S)}{\prod_{j=1}^k{P(F_j)}}$
+ $P(s \in S)$ - ймовірність речення потрапити в реферування ( завжди константа)
+ $P( F_j )$ - ймовірність ознаки  $F_j$
+ $P(F_j|s \in S)$ - ймовірність ознаки $F_j$ за умови, що речення потрапило до реферування
+
+Використання даного методу значно краще показує себе відносно інших методів класифікації зокрема в [7], де результат був показаний кращий за алгоритм дерева рішень C4.5, а також. 
+В середньому такі алгоритми набирають 40-50 відсотків точності [7],[8] (див додаток малюнки 2,3)
+
+##### Штучна нейронна мережа (ANN)
+ 
 
 #### TextRank
 
@@ -44,9 +60,20 @@ $Similarity(S_i,S_j) =\frac{\omega_k|\omega_k \in S_i \cap S_j}{log(|S_i|)+log(|
 
 ![[image-11-x71-y83.png]]
 Малюнок 1. Середні оцінки 
+![[image-6-x309-y610.png]]
+Малюнок 2. Результати [8]
+![[image-7-x121-y304.png]]
+Малюнок 3. Результати з [7]
+
+
 ### Refenences
 [1] TextRank: Bringing Order into Text [[mihalceaTextRankBringingOrder2004]]
 [2] The anatomy of a large-scale hypertextual Web search engine [[brinAnatomyofLargescalehypertextualWebSearchengine]]
 [3] A survey on Automatic Text Summarization [[nazariSurveyAutomaticText2019]]
 [4] Baxendale, P. B. (1958). Machine- Made Index for Technical Literature. An Experiment. IBM Journal of Research Development, vol. 4, no. 2, pp. 354-361. 
 [5] Edmondson, H. P. (1969). New Methods in Automatic Extracting. Journal of the ACM, vol. 2, no. 16, pp. 264-285. [[edmundsonNewMethodsAutomatic1969]]
+[6] A Trainable Document Summarizer, Julian Kupiec, Jan Pedersen and Francine Chen, 1995
+[7] Automatic Text Summarization Using a Machine Learning Approach
+Author: Joel Larocca Neto, Alex A. Freitas, Celso A. A. Kaestner [[netoAutomaticTextSummarization2002]]
+[8] A Trainable Document Summarizer Using Bayesian Classifier Approach, Aditi Sharan , Hazra Imran, ManjuLata Joshi, 2008 [[sharanTrainableDocumentSummarizer2008]]
+[9]

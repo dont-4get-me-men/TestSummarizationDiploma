@@ -35,7 +35,10 @@ $P(s \in S|F_1,F_2,...,F_k) = \frac{P(s \in S) \times \prod_{j=1}^{k} P(F_j| s \
 В середньому такі алгоритми набирають 40-50 відсотків точності [7],[8] (див додаток малюнки 2,3)
 
 ##### Штучна нейронна мережа (ANN)
- 
+Не можна було б згадати  нейронних мереж.
+
+Вхідними даними в даному випадку будуть речення в документі, де в кожному реченні буде наступнаz
+
 
 #### TextRank
 
@@ -76,4 +79,4 @@ $Similarity(S_i,S_j) =\frac{\omega_k|\omega_k \in S_i \cap S_j}{log(|S_i|)+log(|
 [7] Automatic Text Summarization Using a Machine Learning Approach
 Author: Joel Larocca Neto, Alex A. Freitas, Celso A. A. Kaestner [[netoAutomaticTextSummarization2002]]
 [8] A Trainable Document Summarizer Using Bayesian Classifier Approach, Aditi Sharan , Hazra Imran, ManjuLata Joshi, 2008 [[sharanTrainableDocumentSummarizer2008]]
-[9]
+[9] Text Summarization Using Neural Networks, KHOSROW KAIKHAH [[kaikhahTextSummarizationUsing]]
